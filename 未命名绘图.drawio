@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" modified="2023-07-29T06:56:45.474Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="XD2SJr2Qd2RbIjwwuOA8" version="21.6.6" type="github">
+  <diagram name="第 1 页" id="GmRVTx2pbCf9GkAjfXwT">
+    <mxGraphModel dx="1549" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-1" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="70" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sVd1C1OatbYVPPUzWxBH-3" target="sVd1C1OatbYVPPUzWxBH-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-3" value="输入文本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="sVd1C1OatbYVPPUzWxBH-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="110" as="sourcePoint" />
+            <mxPoint x="430" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sVd1C1OatbYVPPUzWxBH-5" target="sVd1C1OatbYVPPUzWxBH-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="340" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-5" value="后台接收文本，加入文本队列中" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="290" y="240" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sVd1C1OatbYVPPUzWxBH-7" target="sVd1C1OatbYVPPUzWxBH-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-7" value="用微软tts将分割的文本转换为语音" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="490" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-9" value="用librosa获取音频的梅尔频谱，并按上一步的视频帧分割梅尔频谱" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="190" y="660" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-14" value="将文本按句号进行分割" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="400" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-15" value="从队列中取出文本" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="320" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sVd1C1OatbYVPPUzWxBH-15" target="sVd1C1OatbYVPPUzWxBH-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="sVd1C1OatbYVPPUzWxBH-14" target="sVd1C1OatbYVPPUzWxBH-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="450" as="sourcePoint" />
+            <mxPoint x="430" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sVd1C1OatbYVPPUzWxBH-24" target="sVd1C1OatbYVPPUzWxBH-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-24" value="加载准备好的需要合成的视频，读取的全部的视频帧和帧率" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="580" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-28" value="生成包含去掉下半脸和全部脸，梅尔频谱，视频帧，人脸坐标的数据集" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="190" y="750" width="382" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="sVd1C1OatbYVPPUzWxBH-9" target="sVd1C1OatbYVPPUzWxBH-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="710" as="sourcePoint" />
+            <mxPoint x="430" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-32" value="遍历数据集，取出视频帧和梅尔频谱" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="181" y="840" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-34" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="790" as="sourcePoint" />
+            <mxPoint x="380" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-35" value="将视频帧和梅尔频谱作为参数传入到模型中进行推理" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="930" width="410" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-37" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379.5" y="880" as="sourcePoint" />
+            <mxPoint x="379.5" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-38" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380.5" y="980" as="sourcePoint" />
+            <mxPoint x="380" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-39" value="将推理生成的图片截取和缩放并替换原视频的指定位置，并将图片写入到临时视频中" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="1020" width="490" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-40" value="将临时视频和tts生成的音频进行合成，生成根据音频生成的对应唇形的新视频" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="140" y="1120" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-42" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380.5" y="1070" as="sourcePoint" />
+            <mxPoint x="380.5" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-43" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380.5" y="1160" as="sourcePoint" />
+            <mxPoint x="380.5" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVd1C1OatbYVPPUzWxBH-44" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="321" y="1210" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
